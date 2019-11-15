@@ -1,19 +1,21 @@
 ####################################################################################################################################
-#		 					ASSIGNMENT ANALYSIS
-# 									from
-# Biodiversity inventory of the grey mullets (Actinopterygii: Mugilidae) of the Indo-Australian Archipelago through the iterative use of DNA-based species delimitation and specimen assignment methods
+#		 	ASSIGNMENT ANALYSIS
+# 						from
+# "Biodiversity inventory of the grey mullets (Actinopterygii: Mugilidae) of the Indo-Australian Archipelago 
+# through the iterative use of DNA-based species delimitation and specimen assignment methods"
 # 
-# Delrieu-Trottin E, Durand JD, Limmon G, Sukmono T, Kadarusman, Sugeha HY, Chen WJ, Busson F, Borsa P, Dahruddin H, Sauri S, Fitriana Y, Zein MSA,  Hocdé R, Pouyaud L, Keith P, D Wowor, Steinke D, Hanner R, Hubert N
+# Delrieu-Trottin E, Durand JD, Limmon G, Sukmono T, Kadarusman, Sugeha HY, Chen WJ, Busson F, Borsa P, Dahruddin H, 
+# Sauri S, Fitriana Y, Zein MSA,  Hocdé R, Pouyaud L, Keith P, D Wowor, Steinke D, Hanner R, Hubert N
 #
 # 
 #
 ######################################################################################################################################
 
-# load libraries. Install the necessary packages running
-install.packages ("BarcodingR")
-install.packages ("adegenet")
+# Install the necessary packages running:
+install.packages("BarcodingR")
+install.packages("adegenet")
 
-# load the two packages in R:
+# Load the two packages in R:
 library("BarcodingR")
 library("adegenet")
 
@@ -24,7 +26,8 @@ library("adegenet")
 ##############################################################################
 
 
-# One should prepare two FASTA format files, corresponding to your aligned (1) reference sequences and (2) query sequences.
+# One should prepare two FASTA format files, corresponding to your aligned 
+# (1) reference sequences and (2) query sequences.
 
 ### import reference sequences using adegenet-- KNOWN , aligned; only 1 sequence per OTU
 ref<-fasta2DNAbin("your_reference_sequences.fasta")
